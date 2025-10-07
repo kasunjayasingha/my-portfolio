@@ -13,6 +13,8 @@ import Reasons from "@/components/home/Reasons";
 import Testimonials from "@/components/home/Testimonials";
 import Commitments from "@/components/home/Commitments";
 import CTA from "@/components/home/CTA";
+import Experience from "@/components/home/Experience";
+import Education from "@/components/home/Education";
 
 export default function Home() {
   return (
@@ -21,16 +23,18 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Impact />
-        <Featured />
-        <Products />
-        <Services />
+        {/*<Impact />*/}
+        {/*<Featured />*/}
+        {/*<Products />*/}
+        {/*<Services />*/}
         <Projects />
-        <Achievements />
-        <Reasons />
-        <Testimonials />
-        <Commitments />
-        <CTA />
+        <Experience />
+        <Education />
+        {/*<Achievements />*/}
+        {/*<Reasons />*/}
+        {/*<Testimonials />*/}
+        {/*<Commitments />*/}
+        {/*<CTA />*/}
         <Contact />
       </main>
       <Footer />

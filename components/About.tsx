@@ -12,18 +12,28 @@ export default function About() {
       <div className="grid gap-8 md:grid-cols-3 items-start">
         <Card className="md:col-span-1 flex items-center gap-4">
           <div className="relative w-20 h-20 rounded-2xl overflow-hidden">
-            <Image src="/next.svg" alt="Avatar" fill sizes="80px" className="object-contain p-3" />
+            <Image src="/profile.jpg" alt="Kasun Jayasinghe" fill sizes="80px" className="object-cover" />
           </div>
           <div>
-            <h3 className="text-lg font-semibold">Your Name</h3>
-            <p className="text-sm text-[var(--muted)]">Frontend Engineer</p>
+            <h3 className="text-lg font-semibold">Kasun Jayasinghe</h3>
+            <p className="text-sm text-[var(--muted)]">Full Stack Developer — React | Next.js</p>
           </div>
         </Card>
         <Card className="md:col-span-2">
           <p className="text-[var(--muted)]">
-            I build sleek, accessible interfaces with a focus on performance and motion. I love
-            turning complex ideas into simple, elegant experiences.
+            Results-oriented Full Stack Developer with nearly 2 years of professional experience. Specialized in backend
+            development with Spring Boot and frontend development with Angular and React. Proficient in building
+            microservices, securing applications (OAuth2, JWT, Keycloak), and deploying scalable solutions with Docker and
+            CI/CD. Strong team player with leadership experience and a proven track record of delivering high-quality
+            software solutions.
           </p>
+          <div className="mt-4">
+            <a href="/Kasun_Jayasinghe_CV.pdf" target="_blank" className="inline-block">
+              <span className="inline-flex items-center justify-center rounded-xl border border-[var(--card-border)] px-4 py-2 hover:bg-white/5">
+                Download CV
+              </span>
+            </a>
+          </div>
         </Card>
       </div>
 

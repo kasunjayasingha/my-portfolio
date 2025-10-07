@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, Orbitron } from "next/font/google";
 import "./globals.css";
 
@@ -15,27 +15,34 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio.example.com"),
+  metadataBase: new URL("https://portfolio.kasunjayasinghe.com"),
   title: {
-    default: "Your Name — Portfolio",
-    template: "%s — Your Name",
+    default: "Kasun Jayasinghe — Portfolio",
+    template: "%s — Kasun Jayasinghe",
   },
   description:
-    "Futuristic, minimal portfolio — projects, skills, and contact. Built with Next.js.",
+    "Results-oriented Full Stack Developer (Java/Spring Boot, React/Angular). Nearly 2 years experience building secure, scalable systems.",
   keywords: [
+    "Full Stack Developer",
+    "Java",
+    "Spring Boot",
+    "React",
+    "Angular",
+    "Microservices",
     "Next.js",
-    "Portfolio",
-    "Frontend",
-    "Developer",
-    "Framer Motion",
-    "Tailwind",
+    "TypeScript",
   ],
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
-    title: "Your Name — Portfolio",
+    title: "Kasun Jayasinghe — Portfolio",
     description:
-      "Futuristic, minimal portfolio — projects, skills, and contact.",
-    url: "https://portfolio.example.com",
-    siteName: "Your Name — Portfolio",
+      "Full Stack Developer — Java, Spring Boot, React, Angular. Secure microservices and scalable UIs.",
+    url: "https://portfolio.kasunjayasinghe.com",
+    siteName: "Kasun Jayasinghe — Portfolio",
     images: [
       {
         url: "/vercel.svg",
@@ -47,7 +54,22 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kasun Jayasinghe — Portfolio",
+    description:
+      "Full Stack Developer — Java, Spring Boot, React, Angular. Secure microservices and scalable UIs.",
+    images: ["/vercel.svg"],
+  },
   robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  colorScheme: "dark light",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

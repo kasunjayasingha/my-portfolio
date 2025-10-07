@@ -14,7 +14,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="text-xs tracking-[0.2em] text-[var(--muted)] uppercase"
           >
-            Building the Future with Code
+            Full Stack Developer — Galle, Sri Lanka
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
@@ -22,7 +22,7 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="font-[var(--font-display)] text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mt-3"
           >
-            Hi, I'm <span className="text-[var(--accent)]">Your Name</span>
+            Hi, I'm <span className="text-[var(--accent)]">Kasun Jayasinghe</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -30,8 +30,9 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="mt-4 text-[var(--muted)] max-w-prose"
           >
-            Frontend engineer crafting clean, performant experiences with Next.js, TypeScript,
-            and motion. I design for clarity and build for impact.
+            Results-oriented Full Stack Developer with nearly 2 years of experience. Specializing in
+            backend with Java/Spring Boot and frontend with React & Angular. I build secure microservices
+            and scalable UIs, with CI/CD, Docker, and robust testing.
           </motion.p>
 
           <div className="mt-8 flex items-center gap-3">

@@ -34,62 +34,56 @@ export type Commitment = { title: string };
 
 export const projects: Project[] = [
   {
-    title: "NeonFlow Dashboard",
+    title: "Affiniti Collect Plus System (2024 – Present)",
     description:
-      "Real-time analytics dashboard with glassmorphism UI and motion transitions.",
-    tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/you/neonflow",
+      "Debt collection and recovery platform automating receivables lifecycle: credit dashboards, notifications, SLA escalations, case management, reporting.",
+    tech: ["Java", "Spring Boot", "REST APIs", "Hibernate/JPA"],
   },
   {
-    title: "AI Portfolio Generator",
+    title: "Affiniti CRM (2024 – Present)",
     description:
-      "Generates sleek personal sites with content prompts and themed presets.",
-    tech: ["Next.js", "OpenAI", "Supabase"],
-    liveUrl: "https://example.com",
-    repoUrl: "https://github.com/you/ai-portfolio",
+      "CRM integrating sales and service to enhance customer interactions.",
+    tech: ["Microservices", "Spring Boot", "React", "JSP", "MySQL"],
   },
   {
-    title: "Edge Image Optimizer",
+    title: "Tea Value Chain Management System (2023 – 2024)",
     description:
-      "On-the-fly transforms and caching for hero imagery on the edge.",
-    tech: ["Next.js", "Edge Runtime", "WASM"],
-    repoUrl: "https://github.com/you/edge-image-optimizer",
-  },
-  {
-    title: "Rukshan FDO News",
-    description:
-      "External reference link as requested. Opens the news site in a new tab.",
-    tech: ["External"],
-    liveUrl:
-      "https://www.rukshanfdo.news/?fbclid=IwZXh0bgNhZW0CMTEAAR6H_CtIOCmdQfnSpVoTfEpc9XbpkM_djeW-mx96_TyfD8f2SjkZR5DRVrhcLw_aem_QnUlHNjkISxKO7B4bXTcEw",
+      "Lifecycle tracking system for Sri Lanka Tea Board across production stages.",
+    tech: ["Microservices", "Spring Boot", "Angular", "MySQL"],
   },
 ];
 
 export const skills: { label: string; icon: string }[] = [
-  { label: "Next.js", icon: "SiNextdotjs" },
-  { label: "TypeScript", icon: "SiTypescript" },
-  { label: "Tailwind CSS", icon: "SiTailwindcss" },
-  { label: "Framer Motion", icon: "SiFramer" },
+  { label: "Java", icon: "SiJava" },
+  { label: "Spring Boot", icon: "SiSpringboot" },
   { label: "React", icon: "SiReact" },
-  { label: "Node.js", icon: "SiNodedotjs" },
+  { label: "Next.js", icon: "SiNextdotjs" },
+  { label: "Angular", icon: "SiAngular" },
+  { label: "TypeScript", icon: "SiTypescript" },
+  { label: "Python", icon: "SiPython" },
+  { label: "MySQL", icon: "SiMysql" },
+  { label: "MongoDB", icon: "SiMongodb" },
+  { label: "Docker", icon: "SiDocker" },
+  { label: "Kafka", icon: "SiApachekafka" },
+  { label: "RabbitMQ", icon: "SiRabbitmq" },
+  { label: "Keycloak", icon: "SiKeycloak" },
 ];
 
 export const services: Service[] = [
   {
-    title: "Frontend Engineering",
-    blurb: "Accessible, performant UIs with modern stacks and design systems.",
-    features: ["Next.js + TypeScript", "Design System Setup", "A11y & Performance"],
+    title: "Backend & Microservices",
+    blurb: "Java/Spring Boot services with security, observability, and reliability.",
+    features: ["RESTful APIs", "JPA/Hibernate", "OAuth2/JWT/Keycloak"],
   },
   {
-    title: "Motion & Microinteractions",
-    blurb: "Subtle animations that guide without distracting.",
-    features: ["Framer Motion", "Interaction Design", "Delightful Feedback"],
+    title: "Frontend Development",
+    blurb: "Modern SPAs with React and Angular, optimized for UX and performance.",
+    features: ["React + Redux", "Angular Forms & Routing", "Responsive UI"],
   },
   {
-    title: "Landing Pages",
-    blurb: "Sharp, conversion-focused pages with clean storytelling.",
-    features: ["Hero & Sections", "SEO & Analytics", "A/B Friendly"],
+    title: "DevOps & Delivery",
+    blurb: "Containerization and CI/CD for scalable deployments.",
+    features: ["Docker & Compose", "CI/CD Pipelines", "Best Practices"],
   },
 ];
 
@@ -123,10 +117,10 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const achievements: Achievement[] = [
-  { title: "Performance Optimization", description: "Cut LCP by 45% across key pages." },
-  { title: "Team Leadership", description: "Mentored devs and drove design systems adoption." },
-  { title: "Quality Assurance", description: "Introduced robust linting and visual regression." },
-  { title: "Innovation Focus", description: "Shipped complex motion without hurting performance." },
+  { title: "Security & Auth", description: "Implemented OAuth2, JWT, and Keycloak across services." },
+  { title: "Microservices Delivery", description: "Built and deployed production services with Spring Cloud." },
+  { title: "CI/CD & Containers", description: "Containerized apps and automated pipelines with Docker & CI/CD." },
+  { title: "Advanced JPA", description: "Wrote complex queries, AOP aspects, and custom annotations." },
 ];
 
 export const reasons: Reason[] = [

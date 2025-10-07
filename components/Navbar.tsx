@@ -32,17 +32,17 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-5 h-16 flex items-center justify-between">
         <Link href="#home" className="font-[var(--font-display)] text-lg">
-          <span className="text-[var(--accent)]">&lt;/&gt;</span> YourName
+          <span className="text-[var(--accent)]">&lt;/&gt;</span> Kasun Jayasinghe
         </Link>
         <div className="hidden sm:flex items-center gap-6">
           {[
             { href: "#about", label: "About" },
-            { href: "#impact", label: "Impact" },
-            { href: "#featured", label: "Featured" },
-            { href: "#products", label: "Products" },
-            { href: "#services", label: "Services" },
+            // { href: "#impact", label: "Impact" },
+            // { href: "#featured", label: "Featured" },
+            // { href: "#products", label: "Products" },
+            // { href: "#services", label: "Services" },
             { href: "#projects", label: "Projects" },
-            { href: "#testimonials", label: "Testimonials" },
+            { href: "#experience", label: "Experience" },
             { href: "#contact", label: "Contact" },
           ].map((item) => (
             <Link key={item.href} href={item.href} className="text-sm text-[var(--muted)] hover:text-[var(--foreground)]">
@@ -51,10 +51,10 @@ export default function Navbar() {
           ))}
         </div>
         <div className="flex items-center gap-2">
-          <Link href="https://github.com/your" target="_blank" aria-label="GitHub" className="p-2 rounded-full hover:bg-white/5">
+          <Link href="https://github.com/kasunjayasingha" target="_blank" aria-label="GitHub" className="p-2 rounded-full hover:bg-white/5">
             <FaGithub />
           </Link>
-          <Link href="https://linkedin.com/in/your" target="_blank" aria-label="LinkedIn" className="p-2 rounded-full hover:bg-white/5">
+          <Link href="https://www.linkedin.com/in/kasun-jayasinghe-7800271bb/" target="_blank" aria-label="LinkedIn" className="p-2 rounded-full hover:bg-white/5">
             <FaLinkedin />
           </Link>
           <Link href="#contact" className="hidden sm:block">

@@ -59,17 +59,21 @@ export default function Contact() {
         </form>
 
         <div className="grid gap-4 content-start">
-          <a href="mailto:you@example.com" className="flex items-center gap-3 p-4 glass rounded-2xl">
+          <a href="mailto:kasunharitha55@gmail.com" className="flex items-center gap-3 p-4 glass rounded-2xl">
             <FaEnvelope className="text-[var(--accent)]" />
-            you@example.com
+            kasunharitha55@gmail.com
           </a>
-          <a href="https://github.com/your" target="_blank" className="flex items-center gap-3 p-4 glass rounded-2xl">
+          <a href="tel:+94766988963" className="flex items-center gap-3 p-4 glass rounded-2xl">
+            <span className="text-[var(--accent)]">📞</span>
+            +94 766988963
+          </a>
+          <a href="https://github.com/kasunjayasingha" target="_blank" className="flex items-center gap-3 p-4 glass rounded-2xl">
             <FaGithub className="text-[var(--accent)]" />
-            github.com/your
+            github.com/kasunjayasingha
           </a>
-          <a href="https://linkedin.com/in/your" target="_blank" className="flex items-center gap-3 p-4 glass rounded-2xl">
+          <a href="https://www.linkedin.com/in/kasun-jayasinghe-7800271bb/" target="_blank" className="flex items-center gap-3 p-4 glass rounded-2xl">
             <FaLinkedin className="text-[var(--accent)]" />
-            linkedin.com/in/your
+            linkedin.com/kasun-jayasinghe
           </a>
         </div>
       </div>
