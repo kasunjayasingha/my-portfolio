@@ -24,12 +24,12 @@ export function Section({
   children,
 }: SectionProps) {
   return (
-    <section id={id} className={cx("section", className)}>
-      <div className={cx("mx-auto w-full max-w-6xl px-5", containerClassName)}>
+    <section id={id} className={cx("py-16", className)}>
+      <div className={cx("mx-auto w-full max-w-6xl px-6", containerClassName)}>
         {(title || subtitle) && (
-          <div className="mb-8">
+          <div className="mb-12 text-center">
             {subtitle && (
-              <p className="text-xs tracking-[0.2em] text-[var(--muted)] uppercase">
+              <p className="text-sm font-medium text-[var(--accent)] mb-2">
                 {subtitle}
               </p>
             )}
@@ -39,7 +39,7 @@ export function Section({
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="font-[var(--font-display)] text-3xl sm:text-4xl font-semibold"
+                className="text-3xl font-bold text-[var(--foreground)]"
               >
                 {title}
               </motion.h2>
@@ -51,5 +51,3 @@ export function Section({
     </section>
   );
 }
-
-

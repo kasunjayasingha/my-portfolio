@@ -15,17 +15,17 @@ function cx(...classes: Array<string | undefined | false>) {
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", ...props }, ref) => {
-    const base = "neon-ring rounded-full font-medium focus:outline-none";
+    const base = "rounded-lg font-medium focus:outline-none transition-all duration-200";
     const sizes = {
-      sm: "text-sm px-4 h-9",
-      md: "text-sm sm:text-base px-6 h-11",
-      lg: "text-base px-7 h-12",
+      sm: "text-sm px-4 py-2",
+      md: "text-sm px-6 py-3",
+      lg: "text-base px-8 py-3",
     } as const;
     const variants = {
       primary:
-        "bg-[var(--accent)] text-black hover:opacity-95 active:opacity-90",
+        "bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] shadow-sm hover:shadow-md",
       ghost:
-        "bg-transparent text-[var(--foreground)] border border-[var(--card-border)] hover:bg-white/5",
+        "bg-transparent text-[var(--foreground)] border border-[var(--card-border)] hover:bg-gray-50",
     } as const;
 
     return (
@@ -41,5 +41,3 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 );
 
 Button.displayName = "Button";
-
-
