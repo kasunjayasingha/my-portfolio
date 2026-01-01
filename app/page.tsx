@@ -23,18 +23,9 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        {/*<Impact />*/}
-        {/*<Featured />*/}
-        {/*<Products />*/}
-        {/*<Services />*/}
         <Projects />
         <Experience />
         <Education />
-        {/*<Achievements />*/}
-        {/*<Reasons />*/}
-        {/*<Testimonials />*/}
-        {/*<Commitments />*/}
-        {/*<CTA />*/}
         <Contact />
       </main>
       <Footer />

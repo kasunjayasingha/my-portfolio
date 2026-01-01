@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Button } from "./ui/Button";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiSun, HiMoon } from "react-icons/hi";
+import { useTheme } from "@/hooks/useTheme";
 
 function cx(...classes: Array<string | undefined | false>) {
   return classes.filter(Boolean).join(" ");
@@ -12,6 +14,7 @@ function cx(...classes: Array<string | undefined | false>) {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -26,7 +29,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className={cx(
-        "fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur-sm",
+        "fixed top-0 inset-x-0 z-50 bg-[var(--background)]/95 backdrop-blur-sm",
         scrolled && "border-b border-[var(--card-border)] shadow-sm"
       )}
     >
@@ -51,11 +54,18 @@ export default function Navbar() {
           ))}
         </div>
         <div className="flex items-center gap-3">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg hover:bg-[var(--card)] transition-colors"
+            aria-label="Toggle theme"
+          >
+            {theme === "light" ? <HiMoon className="w-4 h-4" /> : <HiSun className="w-4 h-4" />}
+          </button>
           <Link 
             href="https://github.com/kasunjayasingha" 
             target="_blank" 
             aria-label="GitHub" 
-            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-lg hover:bg-[var(--card)] transition-colors"
           >
             <FaGithub className="w-4 h-4" />
           </Link>
@@ -63,7 +73,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/kasun-jayasinghe-7800271bb/" 
             target="_blank" 
             aria-label="LinkedIn" 
-            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-lg hover:bg-[var(--card)] transition-colors"
           >
             <FaLinkedin className="w-4 h-4" />
           </Link>
